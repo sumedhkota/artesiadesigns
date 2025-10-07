@@ -1,0 +1,59 @@
+OLD VIDEO LINKS - STORED FOR REFERENCE
+=====================================
+
+These are the original Google Drive and ScreenPal links that were replaced with GitHub Pages links.
+
+GOOGLE DRIVE LINKS:
+------------------
+1. Awards: https://drive.google.com/file/d/1aSao7CTBM_JTxV-TqZ2rARNdbKBFyYC2/preview
+2. Bansuri: https://drive.google.com/file/d/1NHivV1Da9XpuLoCv7lteousMZZb3yptC/preview
+3. Candle Holder: https://drive.google.com/file/d/1qrQ5CKvqiffB4s7kOBAZPVySP69hJxz8/preview
+4. Dreamscape: https://drive.google.com/file/d/10LGNZ2Ck_sZzy6bWZ3z_hhS3CUWonR_8/preview
+5. Ganesha: https://drive.google.com/file/d/1EpgzimN2mXtdWtsgOERZo5uNmFI1Bhdk/preview
+6. Ganesha2: https://drive.google.com/file/d/1CWMa8bMo7-Gg-wEIZ3N_NzXfLI652qBa/preview
+7. Timeless Traditions: https://drive.google.com/file/d/1cN2zF27vuCD1g72K9dHXTybCVuiGvOJa/preview
+8. Gather Glow: https://drive.google.com/file/d/1zwcfTHt4AOb32RPSlpWdqP0aqdnTyfwm/preview
+9. Name Plate: https://drive.google.com/file/d/1t44SZdZy2YqcVCnWqDTD0e81CL8W35fF/preview
+10. Haveli: https://drive.google.com/file/d/1fI_KM3fXUuPBsVJrlt0mu0nt3vQ1I2xp/preview
+11. Jharoka: https://drive.google.com/file/d/1q6Q1XR6hS78mVG_HYPmeMFz7SpOpnMD6/preview
+12. Kalasam: https://drive.google.com/file/d/1MBLyqj8GZ3JifpDlbuFZIgFdnDdq6es_/preview
+13. Mandala: https://drive.google.com/file/d/1hZdIESO-WIlkv-pDyY-B7XR9KwcwHx6s/preview
+14. Paisely: https://drive.google.com/file/d/1Z6Dd_oEXkxHkYjodCtjm18e1MGmPSny8/preview
+15. Rang Rasiya: https://drive.google.com/file/d/1JOg1NhHA7PBUMNUcH7ndjzYHGd9HOTnt/preview
+16. Rangeela: https://drive.google.com/file/d/1RlBA0uvvYsbfNQxVZzNvojdT2QSMO57h/preview
+17. Ride Away: https://drive.google.com/file/d/1AmfahirJTmplqC9JmtN3hx6R2NCx3lhO/preview
+18. Symphony: https://drive.google.com/file/d/1AzS9qzLjwf5RUM8t854U3M4_hemUL7N1/preview
+19. Vaibhav Gate: https://drive.google.com/file/d/1GTruHAsUcZjGz6NCGJMeUlpWnhYF07nl/preview
+20. Welcome Sign: https://drive.google.com/file/d/11Sypau0xaJmEyoNkRQ7W2yNv_OqZoxWI/preview
+
+HERO VIDEO (Main Page):
+----------------------
+HomePage Hero Video: https://drive.google.com/file/d/1xg1c72OhKz6A6zqQVrEu6ZUC3jRA4wZp/preview
+
+NEW GITHUB PAGES LINKS:
+======================
+All videos now use the format: https://sumedhkota.github.io/my-videos/{file_name}
+
+Where {file_name} corresponds to the video files in the /videos/ directory:
+- Award.mp4
+- Bansuri.mp4
+- CandleHolder.mp4
+- Dreamscape.mp4
+- Ganesha.mp4
+- Ganesha2.mp4
+- GatherGlow.mp4
+- Haveli.mp4
+- Jharoka.mp4
+- Kalasam.mp4
+- Mandala.mp4
+- NamePlate.mp4
+- Paisely.mp4
+- Rangeela.mp4
+- RangRasiya.mp4
+- RideAway.mp4
+- SymphonyX.mp4
+- TimelessTraditions.mp4
+- VaibhavGate.mp4
+- WelcomeSign.mp4
+
+Note: The hero video on the main page uses a different file name pattern and will need to be updated accordingly.

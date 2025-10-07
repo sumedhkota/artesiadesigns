@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artesia Designs | Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rochester&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("ssdd84gO-owgz-vkd");
+    })();
+  </script>
+</head>
+<body>
+  <!-- Add announcement banner -->
+  <div class="announcement-banner">
+    <div class="announcement-content">
+      🎨 Custom designs available! Transform your space with personalized Lippan art pieces | Free consultation for custom orders | Each piece handcrafted with love | Contact us for your unique creation today! 🎨
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <!-- Add mobile navigation toggle -->
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="logo_and_title">
+            <a href="index.html">
+                <img class="logo" src="images/logo.webp" alt="Artesia Designs Logo">
+            </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="https://www.instagram.com/artesiadesigns/" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="cart-container">
+              <button id="cart-btn" class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+              </button>
+            </li>
+            <li>
+              <button id="favorites-btn" class="favorites-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-modal-content">
+        <span class="close-cart">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-summary">
+          <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total">$0.00</span>
+          </div>
+          <button id="checkout-btn" class="btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favorites Modal -->
+    <div id="favorites-modal" class="favorites-modal">
+      <div class="favorites-modal-content">
+        <span class="close-favorites">&times;</span>
+        <h2>Your Favorites</h2>
+        <div id="favorites-items"></div>
+      </div>
+    </div>
+
+    <!-- Full Screen Image Modal -->
+    <div id="fullscreen-modal" class="fullscreen-modal">
+      <div class="fullscreen-content">
+        <span class="fullscreen-close">&times;</span>
+        <div class="fullscreen-image-container">
+          <button class="fullscreen-nav fullscreen-prev"><i class="fas fa-chevron-left"></i></button>
+          <img src="" alt="Fullscreen Image" class="fullscreen-image">
+          <button class="fullscreen-nav fullscreen-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="fullscreen-gallery"></div>
+      </div>
+    </div>
+
+    <section class="shop-section">
+        <div class="container">
+            <h2>Our Collection</h2>
+            <!-- Add Custom Order Button -->
+            <div class="custom-order-btn" id="custom-order-btn">
+                <i class="fas fa-plus-circle"></i>
+                <div class="content">
+                    <h3>Create Your Custom Piece</h3>
+                    <p>Let us bring your vision to life with a personalized Lippan art creation</p>
+                </div>
+            </div>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Order Modal -->
+    <div id="custom-order-modal" class="custom-order-modal">
+        <div class="custom-order-modal-content">
+            <span class="close-custom-order">&times;</span>
+            <h2>Create Your Custom Piece</h2>
+            <form class="custom-order-form" id="custom-order-form">
+                <div class="form-section">
+                    <h3>Contact Information</h3>
+                    <div class="form-group">
+                        <label for="custom-name"><b>Full Name:</b></label>
+                        <input type="text" id="custom-name" name="custom-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="custom-phone"><b>Phone Number:</b></label>
+                        <input type="tel" id="custom-phone" name="custom-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="custom-email"><b>Email Address:</b></label>
+                        <input type="email" id="custom-email" name="custom-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label><b>Preferred Method of Contact:</b></label>
+                        <div class="checkbox-group">
+                            <label><input type="radio" name="contact-method" value="call" required> Call</label>
+                            <label><input type="radio" name="contact-method" value="whatsapp" required> WhatsApp</label>
+                            <label><input type="radio" name="contact-method" value="email" required> Email</label>
+                            <label><input type="radio" name="contact-method" value="text" required> Text</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Installation Location</h3>
+                    <div class="form-group">
+                        <label><b>Where do you plan to display the piece?</b></label>
+                        <div class="checkbox-group">
+                            <label><input type="radio" name="location" value="living-room" required> Living Room</label>
+                            <label><input type="radio" name="location" value="puja-mandir" required> Puja Mandir</label>
+                            <label><input type="radio" name="location" value="entryway" required> Entryway</label>
+                            <label><input type="radio" name="location" value="bedroom" required> Bedroom</label>
+                            <label><input type="radio" name="location" value="event-backdrop" required> Event Backdrop</label>
+                            <label><input type="radio" name="location" value="gift" required> Gift</label>
+                            <label class="other-input">
+                                <input type="radio" name="location" value="other" required> Other:
+                                <input type="text" name="location-other" placeholder="Please specify">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="wall-size"><b>Approximate Wall Size / Area Dimensions:</b></label>
+                        <input type="text" id="wall-size" name="wall-size" placeholder="e.g., 10ft x 8ft" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Design Preferences</h3>
+                    <div class="form-group">
+                        <label><b>Theme or Style:</b></label>
+                        <div class="checkbox-group">
+                            <label><input type="radio" name="style" value="traditional" required> Traditional (Peacock, Mandala, Floral)</label>
+                            <label><input type="radio" name="style" value="contemporary" required> Contemporary / Geometric</label>
+                            <label><input type="radio" name="style" value="minimalist" required> Minimalist</label>
+                            <label><input type="radio" name="style" value="custom" required> Custom / Story-Based</label>
+                            <label><input type="radio" name="style" value="suggestions" required> Not Sure – Need Suggestions</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label><b>Shape Preference:</b></label>
+                      <div class="checkbox-group">
+                          <label><input type="radio" name="shape" value="round" required>Round</label>
+                          <label><input type="radio" name="shape" value="square" required> Square/Rectangular</label>
+                          <label><input type="radio" name="shape" value="multi-panel" required> Multi-Panel</label>
+                          <label class="other-input">
+                              <input type="radio" name="shape" value="other" required> Other:
+                              <input type="text" name="shape-other" placeholder="Please specify">
+                          </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="color-palette"><b>Color Palette (multiple if possible):</b></label>
+                        <input type="text" id="color-palette" name="color-palette" placeholder="e.g., Gold, Red, Blue" required>
+                    </div>
+                    
+                </div>
+
+                <div class="form-section">
+                    <h3>Timeline & Budget</h3>
+                    <div class="form-group">
+                        <label for="timeline"><b>When do you need the piece by?</b></label>
+                        <input type="text" id="timeline" name="timeline" placeholder="e.g., 2 weeks, 1 month" required>
+                    </div>
+                    <div class="form-group">
+                        <label><b>Estimated Budget Range:</b></label>
+                        <div class="checkbox-group">
+                            <label><input type="radio" name="budget" value="300-1000" required> $300 – $1000</label>
+                            <label><input type="radio" name="budget" value="1000-5000" required> $1000 – $5000</label>
+                            <label><input type="radio" name="budget" value="5000-10000" required> $5000 – $10000</label>
+                            <label><input type="radio" name="budget" value="10000+" required> $10000+</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Additional Notes</h3>
+                    <div class="form-group">
+                        <label for="additional-notes"><b>Additional Notes / Ideas / Inspirations:</b></label>
+                        <textarea id="additional-notes" name="additional-notes" placeholder="Provide your ideas, inspirations, or any other details you'd like to share"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label><b>How did you hear about us?</b></label>
+                        <div class="checkbox-group">
+                            <label><input type="radio" name="source" value="instagram" required> Instagram</label>
+                            <label><input type="radio" name="source" value="facebook" required> Facebook</label>
+                            <label><input type="radio" name="source" value="word-of-mouth" required> Word of Mouth</label>
+                            <label><input type="radio" name="source" value="event-booth" required> Event Booth</label>
+                            <label class="other-input">
+                                <input type="radio" name="source" value="other" required> Other:
+                                <input type="text" name="source-other" placeholder="Please specify">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">Submit Custom Order Request</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>© 2025 Artesia Designs. All Rights Reserved.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/artesiadesigns/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

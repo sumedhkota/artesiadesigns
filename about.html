@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesia Designs | About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rochester&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("ssdd84gO-owgz-vkd");
+    })();
+  </script>
+</head>
+<body>
+  <!-- Add announcement banner -->
+  <div class="announcement-banner">
+    <div class="announcement-content">
+      🎨 Custom designs available! Transform your space with personalized Lippan art pieces | Free consultation for custom orders | Each piece handcrafted with love | Contact us for your unique creation today! 🎨
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <!-- Add mobile navigation toggle -->
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="logo_and_title">
+        <a href="index.html">
+          <img class="logo" src="images/logo.webp" alt="Artesia Designs Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="shop.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="https://www.instagram.com/artesiadesigns/" target="_blank" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="cart-container">
+            <button id="cart-btn" class="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cart-count">0</span>
+            </button>
+          </li>
+          <li>
+            <button id="favorites-btn" class="favorites-btn">
+              <i class="fas fa-heart"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+      <span class="close-cart">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button id="checkout-btn" class="btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Favorites Modal -->
+  <div id="favorites-modal" class="favorites-modal">
+    <div class="favorites-modal-content">
+      <span class="close-favorites">&times;</span>
+      <h2>Your Favorites</h2>
+      <div id="favorites-items"></div>
+    </div>
+  </div>
+
+  <main>
+    <section class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <h2>Our Story</h2>
+          <p>Welcome to Artesia Designs, where tradition meets innovation in the world of Lippan art. Our journey began with a simple yet profound vision: to preserve and reimagine the ancient craft of Lippan art for contemporary spaces.</p>
+          <p>Founded by a passionate duo of artists, we combine years of expertise in interior design and graphic artistry to create pieces that not only honor traditional craftsmanship but also speak to modern aesthetic sensibilities.</p>
+          <p>Each piece in our collection is handcrafted with meticulous attention to detail, using traditional techniques passed down through generations. We work with local artisans, ensuring that every creation not only beautifies spaces but also helps preserve this precious art form.</p>
+
+         <article class="dropdown-container">
+          <button class="dropdown-btn" onclick="toggleDropdown('heritage')" aria-expanded="false" aria-controls="heritage">
+             <span class="dropdown-title"> The Rich Heritage of Lippan Art </span><i class="fas fa-chevron-down"></i>
+          </button>
+          <div id="heritage" class="dropdown-content">
+             <p>Lippan art, also known as mud and mirror work, is a stunning form of traditional Indian folk-art originating from the Kutch region of Gujarat. What makes Lippan art truly captivating is its intricate use of mud and mirrors to create mesmerizing patterns and designs.
+             <p>The designs in Lippan art often feature geometric patterns, floral motifs, and symbolic representations inspired by nature and folklore. Each piece is crafted with meticulous attention to detail, with artisans using their fingers or simple tools to shape the mud and embed the mirrors. This is a mixed media art form – wood, acrylic paint, clay, mosaic mirrors.
+          </div>
+         </article>
+         <article class="dropdown-container">
+          <button class="dropdown-btn" onclick="toggleDropdown('significance')" aria-expanded="false" aria-controls="significance">
+            <span class="dropdown-title">Cultural Significance</span> <i class="fas fa-chevron-down"></i>
+          </button>
+          <div id="significance" class="dropdown-content">
+            <p>The patterns in Lippan art are not arbitrary; they are deeply rooted in the cultural narratives of the Rabari community. Common motifs include peacocks, elephants, and geometric shapes, which are believed to bring blessings and protection. The process of creating Lippan art is often a communal activity, bringing women together to share stories, skills, and traditions. Thus, Lippan art is as much about community and heritage as it is about aesthetics.</p>
+          </div>
+         </article>
+          <article class="dropdown-container">
+            <button class="dropdown-btn" onclick="toggleDropdown('process')" aria-expanded="false" aria-controls="process">
+              <span class="dropdown-title">The Process</span> <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="process" class="dropdown-content">
+              <p> The journey of creating custom Lippan art begins with understanding the customer's vision and evaluating their space. We collaborate with clients to gather details about their preferences, decor style, color schemes, and the dimensions of the area where the artwork will be displayed. Once the concept is finalized, we carefully craft the design, starting with a durable base and shaping intricate patterns with a special clay or gypsum mixture. Mirrors are added to enhance the artwork's elegance, and the piece is completed with finishes that align with the client's aesthetic. This personalized approach ensures each creation is a perfect blend of tradition and modernity, tailored to the customer's unique space. </p>
+            </div>
+          </article>
+          <article class="dropdown-container">
+            <button class="dropdown-btn" onclick="toggleDropdown('today')" aria-expanded="false" aria-controls="today">
+              <span class="dropdown-title">Lippan Art Today</span> <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="today" class="dropdown-content">
+               <p>While the traditional form of Lippan art remains a powerful cultural expression, it has also found a growing audience in contemporary society. Today, Lippan art is no longer confined to mud walls; it has evolved to adorn various surfaces, including canvases, wood, and ceramic objects. Modern artisans have also experimented with different materials and designs, expanding the scope and reach of this art form.</p>
+               <p>The revival and global appreciation of Lippan art not only provide economic opportunities for artisans in the Kutch region but also ensure the preservation of this unique cultural heritage. At Artesia Designs, we are committed to being a part of this journey, offering authentic, handcrafted Lippan art that honors tradition while embracing innovation.</p>
+            </div>
+           </article>
+
+          <p><i>Thank you for joining us on this journey!</i></p>
+        </div>
+       <div class="about-video-section">
+         <video controls autoplay muted loop>
+           <source src="https://sumedhkota.github.io/my-videos/AboutPage.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+         </video>
+       </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>© 2025 Artesia Designs. All Rights Reserved.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/artesiadesigns/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+   <script>
+      function toggleDropdown(id) {
+        const content = document.getElementById(id);
+        const button = document.querySelector(`.dropdown-btn[aria-controls="${id}"]`);
+
+        content.classList.toggle('show');
+        button.setAttribute('aria-expanded', content.classList.contains('show'));
+        button.querySelector('i').classList.toggle('fa-chevron-down');
+        button.querySelector('i').classList.toggle('fa-chevron-up');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artesia Designs | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rochester&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("ssdd84gO-owgz-vkd");
+    })();
+  </script>
+</head>
+<body>
+  <!-- Add announcement banner -->
+  <div class="announcement-banner">
+    <div class="announcement-content">
+      🎨 Custom designs available! Transform your space with personalized Lippan art pieces | Free consultation for custom orders | Each piece handcrafted with love | Contact us for your unique creation today! 🎨
+    </div>
+  </div>
+
+    <header>
+      <div class="container">
+        <!-- Add mobile navigation toggle -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="logo_and_title">
+          <a href="index.html">
+            <img class="logo" src="images/logo.webp" alt="Artesia Designs Logo">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="https://www.instagram.com/artesiadesigns/" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="cart-container">
+              <button id="cart-btn" class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+              </button>
+            </li>
+            <li>
+              <button id="favorites-btn" class="favorites-btn">
+                <i class="fas fa-heart"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-modal-content">
+        <span class="close-cart">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-summary">
+          <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total">$0.00</span>
+          </div>
+          <button id="checkout-btn" class="btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favorites Modal -->
+    <div id="favorites-modal" class="favorites-modal">
+      <div class="favorites-modal-content">
+        <span class="close-favorites">&times;</span>
+        <h2>Your Favorites</h2>
+        <div id="favorites-items"></div>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h4>Handcrafted Lippan Art</h4>
+          <h2>Transform Spaces</h2>
+          <h3>With Custom Artistry</h3>
+          <p>At <i>Artesia Designs</i>, creativity knows no bounds. Our duo of an interior designer and graphic artist turns spaces into masterpieces, offering unique Lippan art and handcrafted wonders. Your vision, our canvas - let's craft your story, your style.</p>
+          <a href="shop.html" class="btn">Explore our Collection</a>
+        </div>
+        <div class="hero-video">
+          <video controls autoplay muted loop>
+            <source src="https://sumedhkota.github.io/my-videos/HomePage.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-work">
+      <div class="container">
+        <h2>Featured Art</h2>
+        <div class="artwork-grid">
+          <div class="artwork" data-product-id="name_plate">
+            <img src="images/Name Plate1.webp" alt="Artwork 1">
+            <h3>Name Plate</h3>
+          </div>
+          <div class="artwork" data-product-id="kalasam">
+            <img src="images/kalasam1X.webp" alt="Artwork 2">
+            <h3>Kalasam</h3>
+          </div>
+          <div class="artwork" data-product-id="haveli">
+            <img src="images/haveli1.webp" alt="Artwork 3">
+            <h3>Haveli</h3>
+          </div>
+          <div class="artwork" data-product-id="dreamscape">
+            <img src="images/dreamscape1X.webp" alt="Artwork 4">
+            <h3>Dreamscape</h3>
+          </div>
+        </div>
+        <div class="featured-cta">
+          <a href="shop.html" class="btn">View Our Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-stand-out">
+      <div class="container">
+        <h2>Why <b> We </b> Stand Out</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <h3>Unleash Your Imagination</h3>
+            <p>
+              At Artesia Designs, we specialize in turning your dreams into reality.
+              With our unique customization options, you can envision any space, and
+              we'll craft it to match your personal style and story. Let us help you
+              create a space that is uniquely yours.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Artistry Meets Functionality</h3>
+            <p>
+              Our team of a talented interior designer and a creative graphic artist
+              ensures that each piece is not only a work of art but also functional.
+              Our signature Lippan art pieces and handcrafted wonders are designed
+              to infuse elegance and practicality into any environment.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Personalized Craftsmanship</h3>
+            <p>
+              We pride ourselves on our attention to detail and commitment to
+              quality. Every project is a collaborative process where your vision is
+              our blueprint. Trust Artesia Designs to deliver personalized
+              craftsmanship that speaks to your taste and enhance your living or
+              working space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="testimonials-grid">
+          <button class="testimonial-arrow prev" aria-label="Previous testimonial">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="testimonial-arrow next" aria-label="Next testimonial">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="testimonial">
+            <div class="testimonial-image">
+                <img src="images/testimonials1.webp" alt="Sarah Mitchell">
+            </div>
+            <div class="rating">★★★★★</div>
+            <p class="testimonial-text">“I couldn't be happier with the custom exquisite Kalasam I purchased from Artesia Designs ! The craftsmanship is absolutely stunning, and every detail reflects the passion and talent of the creators, Lakshmi and Indu. It has become a part of my pooja room, and I've received so many compliments. Truly a work of art—thank you for bringing my vision to life!”</p>
+            <p class="client-name">- Suneetha Chalasani</p>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-image">
+                <img src="images/testimonials2.webp" alt="Michael Chen">
+            </div>
+            <div class="rating">★★★★★</div>
+            <p class="testimonial-text">“The Bansuri created by Lakshmi and Indu from Artesia Designs is a conversation piece for me. It's definitely a beautiful and a custom wall art I am so looking forward to keeping in the family for the next generation. We are a family of music. The detailed artwork and the color bringing warmth, elegance and above all a musical element for our home speaks volumes.“</p>
+            <p class="client-name">- Anu Durai</p>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-image">
+                <img src="images/testimonials3.webp" alt="Priya Patel">
+            </div>
+            <div class="rating">★★★★★</div>
+            <p class="testimonial-text">“Our family couldn't be happier with this wonderful piece created by Artesia Designs. Thank you Lakshmi and Indu, for completing the look on my home.“</p>
+            <p class="client-name">- Alba Benitez</p>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-image">
+                <img src="images/testimonials4.webp" alt="Priya Patel">
+            </div>
+            <div class="rating">★★★★★</div>
+            <p class="testimonial-text">“I bought Symphony set of Lippan Art wall pieces from Artesia Designs. When I ordered them, I just assumed another generic wall frame, but I gasped when I saw the level of work that went into doing these plaques. My entire wall space got elevated and transformed. Everyone that walks into the house can see right away and am getting a plethora of complements. I am still amazed at the amount of details they have put into the pieces. Thankyou Lakshmi and Indu for creating such an awe inspiring masterpiece.</p>
+            <p class="client-name">- Neelima</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="meet-creators">
+      <div class="container">
+        <h2>Meet the Creators</h2>
+        <div class="creators-grid">
+          <div class="creator">
+            <div class="creator-image">
+              <img src="images/lakshmi.webp" alt="Lakshmi">
+            </div>
+            <div class="creator-info">
+              <h3>Lakshmi</h3>
+              <p>A passionate interior designer with an eye for detail and a love for traditional art forms. Lakshmi brings her expertise in spatial design and color theory to create stunning Lippan art pieces that perfectly complement modern spaces.</p>
+            </div>
+          </div>
+          <div class="creator">
+            <div class="creator-image">
+              <img src="images/indu.webp" alt="Indu">
+            </div>
+            <div class="creator-info">
+              <h3>Indu</h3>
+              <p>A creative graphic artist who seamlessly blends traditional techniques with contemporary design. Indu's innovative approach to Lippan art brings fresh perspectives while maintaining the authenticity of this ancient craft.</p>
+            </div>
+          </div>
+        </div>
+        <div class="creators-cta">
+          <a href="about.html" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>© 2025 Artesia Designs. All Rights Reserved.</p>
+            <div class="social-links">
+                  <a href="https://www.instagram.com/artesiadesigns/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
